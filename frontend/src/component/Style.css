@@ -1,0 +1,36 @@
+
+.bg-body-tertiary {
+  background-color: #ffffff; 
+}
+.navbar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 75px;
+  z-index: 1000;
+}
+
+.nav-link.active,
+.nav-dropdown-link.active {
+  background-color: #ffc107;
+  color: #000;
+}
+
+.carousel-image {
+  height: 650px; 
+  
+}
+
+.carousel-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5); 
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
