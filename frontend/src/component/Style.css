@@ -1,6 +1,6 @@
 
 .bg-body-tertiary {
-  background-color: #ffffff; 
+  background-color: #f9f9f9; 
 }
 .navbar {
   position: fixed;
@@ -11,10 +11,12 @@
   z-index: 1000;
 }
 
-.nav-link.active,
-.nav-dropdown-link.active {
+.nav-link.active {
   background-color: #ffc107;
   color: #000;
+}
+.nav-link:hover {
+  background-color: #ffc107; 
 }
 
 .carousel-image {
@@ -33,4 +35,53 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
+}
+
+.image {
+  width: 450px; 
+  height: 300px;
+  border-radius: 5%;
+  border: 2px solid rgb(160, 160, 158); 
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5); 
+  transition: border-color 0.3s ease; 
+}
+
+.image:hover {
+border: 5px solid #ffc107; 
+}
+
+.custom-font-size {
+  font-size: 1.2rem; 
+}
+
+.card {
+  border-radius: 1.5%;
+  border: 2px solid rgb(160, 160, 158); 
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.5); 
+  background-color: #232d84;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 16px;
+  color: #ffc107;
+  height: 360px;
+  font-size: 14px;
+  transition: opacity 0.5s ease, transform 0.5s ease;
+}
+
+.card:hover {
+  border: 5px solid #ffc107; 
+  background-color: #080841;
+ 
+}
+
+.icon {
+  font-size: 30px; 
+  margin-left: 15px;
+}
+
+.footer {
+  margin-right: 5px;
 }
