@@ -2,30 +2,3 @@
 #1D2228
 #E1E2E2
 
-const [showProfileDropdown, setShowProfileDropdown] = useState(false);
-  const handleProfileClick = () => {
-    setShowProfileDropdown(!showProfileDropdown);
-  };
-
-
-  <Image
-              src="/assets/profile.png"
-              roundedCircle
-              style={{ width: '50px', height: '50px', cursor: 'pointer' }}
-              onClick={handleProfileClick}
-            />
-
-            {showProfileDropdown && (
-              <NavDropdown
-                show={showProfileDropdown}
-                align="end"
-                onSelect={() => setShowProfileDropdown(false)}
-                ref={dropdownRef}
-                style={{ marginRight: '100px' }}
-              >
-                <NavDropdown.Item href="#action-5">Edit Profile</NavDropdown.Item>
-                <NavDropdown.Item href="#action-6">Login</NavDropdown.Item>
-                <NavDropdown.Divider />
-                <NavDropdown.Item href="#action-7">Logout</NavDropdown.Item>
-              </NavDropdown>
-            )}
